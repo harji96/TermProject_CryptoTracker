@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Crypto Tracker</h1>
+    </header>
+
+    <!-- User Preferences -->
+    <section id="preferences">
+        <h2>User Preferences</h2>
+        <label for="sort-option">Sort By:</label>
+        <select id="sort-option">
+            <option value="name">Name</option>
+            <option value="price">Price</option>
+            <option value="marketCap">Market Cap</option>
+            <option value="change">24h Change</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="dark-mode-toggle">
+            Switch Gradient
+        </label>
+    </section>
+
+    <!-- Cryptocurrency Listing Section -->
+    <section id="crypto-listing">
+        <h2>Cryptocurrency Listing</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Current Price (USD)</th>
+                    <th>24h Change (%)</th>
+                    <th>Market Cap (USD)</th>
+                    <th>Favorite</th>
+                    <th>Compare</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-table-body">
+                <tr>
+                    <td colspan="7">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Favorites Section -->
+    <section id="favorites-section">
+        <h2>Favorite Cryptocurrencies</h2>
+        <div id="favorites-list"></div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison-section">
+        <h2>Compare Cryptocurrencies</h2>
+        <p>Select up to 5 cryptocurrencies to compare:</p>
+        <div id="comparison-list"></div>
+    </section>
+
+    <script src="javascript.js">
+    </script>
+</body>
+</html>
